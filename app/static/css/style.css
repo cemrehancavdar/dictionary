@@ -125,3 +125,15 @@
 
         }
         
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .big-input {
+                font-size: 24px;
+            }
+            .quotes {
+                font-size: 30px;
+            }
+            .text {
+                font-size: 30px;
+            }
+          }

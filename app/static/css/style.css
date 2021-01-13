@@ -1,0 +1,127 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:wght@700&family=Oswald:wght@700&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222222;
+        }
+
+        .container {
+            height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+            
+        }
+        .search-box {
+            margin-top: 5vh;
+            width: 50vw;
+            font-weight: 600;
+            flex-grow: 1;
+            /* height: 40vh; */
+        }
+        .big-input {
+            /* border: 3px solid #37474f; */
+            font-weight: 600;
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 48px;
+            background-color: rgba(255, 255, 255, 0.02);
+            color: #DEE4E7;
+            padding: 10px;
+            caret-color: #CC444B;
+            text-transform: lowercase;
+            font-family: Arial;
+            padding: 0;
+            text-decoration: none;
+            text-decoration-color: #CC444B ;
+
+        }
+        .suggestions-div {
+            left: 0;
+            width: 100vw;
+            display: none;
+            position: absolute;
+            justify-content: center;
+            background-color: #222222;
+            height: 87vh;
+
+        }
+
+        .suggestions {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            font-size: 48px;
+            font-family: Arial;
+            color: #DEE4E7;
+            /* position: absolute; */
+            z-index: 1;
+            width: 50vw;
+        }
+
+        .suggested {
+            padding: 1vh 0;
+            color: #DEE4E7;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently */
+        }
+
+        .focused {
+            background-color: #DEE4E7;
+            color: #37474f;
+            cursor: pointer;
+        }
+        .matched {
+            color: #37474f;
+        }
+        span {
+            padding: 0;
+            margin: 0;
+        }
+        .text-div {
+            display: block;
+            /* justify-content: center; */
+            /* align-items: center; */
+            height: 20vh;
+            width: 80%;
+            padding: 1rem;
+            flex-grow: 2.5;
+
+            /* background-color:#37474f; */
+            /* border-radius: 6px; */
+            /* border-right: 8px solid #5B60FF; */
+            /* border-bottom: 8px solid #CC444B ; */
+
+        }
+        .text {
+            font-weight: 300;
+            font-size: 60px;
+            color: #DEE4E7;
+            font-family: Arial;
+            background-color: #0F222C;
+            padding: 4px;
+        }
+        .quotes {
+            font-family: 'Fredoka One', cursive;
+            /* font-family: 'Nunito Sans', sans-serif; */
+            /* font-family: 'Oswald', sans-serif; */
+            color: #CC444B;
+            font-size: 60px;
+            background-color: #0F222C;
+
+        }
+        ::selection {
+            background-color: #37474f;
+            color: #CC444B;
+
+        }
+        

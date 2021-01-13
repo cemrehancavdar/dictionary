@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geodictionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+
+<body>
+    <div class='container'>
+        <div id='search-box' class="search-box">
+            <input type="text" class='big-input' id='data-input' autofocus placeholder="buradan arayın">
+            <div class='suggestions-div' id='suggestions-div'>
+            <ul class="suggestions" id='suggestions'>
+            </ul>
+            </div>
+        </div>
+        <div class="text-div" id='text-div'>
+        </div>
+    </div>
+
+
+    <script src = "{{ url_for('static', filename='js/project.js') }}"></script>
+
+</body>
+
+</html>

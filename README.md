@@ -1,7 +1,8 @@
 Dictionary
 
-TODO
-- references
+TODO 
+- References section
 - UX improvements
 - Better Mobile Experience
-- label ( preferably ?) 
+- Labels ( preferably ?) 
+- Different color options?

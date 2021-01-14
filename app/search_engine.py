@@ -2,9 +2,9 @@ import difflib as dl
 import sqlite3
 
 words_db = []
-conn = sqlite3.connect('db.sqlite',check_same_thread=False)   # veri tabanına bağlandık. Bir kere connect için false (çok öenmli deel)
+conn = sqlite3.connect('db.sqlite',check_same_thread=False)   
 
-def refresh_db():
+def refresh_words_db():
     im = conn.cursor()
     im.execute('select word from dictionary')
     veriler = im.fetchall()
@@ -12,7 +12,7 @@ def refresh_db():
         words_db.pop(0)
     words_db.append([line[0].lower() for line in veriler])
 
-refresh_db()
+refresh_words_db()
 
 
 ###  uyan kelimeleri buluyoruz. sonra gönderdiğimiz kelimeyle başlayanları da bulup hepsini bir listede topluyoruz. sonra remove_duplicate fonk ile tekrarlayan kelimeleri siliyoruz. (diflib ile gelmeyen uzun kelimeleri baş tarflarını karşılaştırıp bulduk ayrıca.)

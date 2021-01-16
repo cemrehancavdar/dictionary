@@ -6,3 +6,4 @@ TODO
 - Better Mobile Experience
 - Labels ( preferably ?) 
 - Different color options?
+- Search by single char
